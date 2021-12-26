@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_activity);
 
-            button = (Button) findViewById(R.id.btn_survey);
+            Button button = findViewById(R.id.btn_survey);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     public void Survey() {
-        Intent intent = new Intent(this, Survey.class);
+        Intent intent = new Intent(MainActivity.this, Survey.class);
         startActivity(intent);
     }
 }
