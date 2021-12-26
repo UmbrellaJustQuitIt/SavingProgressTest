@@ -9,5 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SavingProgressTest" />
+    <activity
+        android:name=".Survey"
+        android:parentActivityName=".MainActivity" />
 
 </manifest>
